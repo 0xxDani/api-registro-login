@@ -1,0 +1,126 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  #welcome-message {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  button {
+    margin-top: 20px;
+  }
+  
+  #username {
+    font-weight: bold;
+  }
+  
+  footer {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+  
+  footer a {
+    color: #007BFF;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilo específico para el botón de cerrar sesión */
+  /* Estilo específico para el botón de cerrar sesión en la página de bienvenida */
+#logout-btn.small-width {
+    width: 15%; /* Solo ocupa el 15% del ancho en la página de bienvenida */
+    padding: 8px 20px; /* Ajusta el padding */
+    font-size: 1rem; /* Ajusta el tamaño de la fuente */
+    margin-top: 20px; /* Añade un margen superior */
+    display: inline-block; /* Asegura que el botón solo ocupe el espacio necesario */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  }
+  
+  #logout-btn.small-width:hover {
+    background-color: #0056b3; /* Efecto hover, cambia el color */
+    transition: background-color 0.3s; /* Añade transición suave */
+  }
+  
+  

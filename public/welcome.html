@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenido</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Incluir FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <h2>¡Bienvenido al sitio!</h2>
+  <p>Has iniciado sesión con éxito.</p>
+  
+  <!-- Aquí puedes personalizar más detalles, como el nombre de usuario -->
+  <p><strong>Nombre de usuario:</strong> <span id="username">Desconocido</span></p>
+
+  <!-- Icono de música con enlace (sin subrayado) -->
+  <p>
+    <a href="https://radio.garden/visit/medellin/4bt53WGI" target="_blank" style="text-decoration: none;">
+      <i class="fas fa-music"></i> Escucha la radio de Medellín
+    </a>
+  </p>
+
+  <button id="logout-btn" class="small-width" onclick="logout()">Cerrar sesión</button>
+
+  <script>
+    // Función para cerrar sesión
+    function logout() {
+      // Limpiamos el localStorage y redirigimos al login
+      localStorage.removeItem('username');
+      window.location.href = 'index.html';
+    }
+
+    // Obtener el nombre de usuario del localStorage y mostrarlo en la página
+    const username = localStorage.getItem('username');
+    if (username) {
+      document.getElementById('username').textContent = username;
+    }
+  </script>
+</body>
+</html>
